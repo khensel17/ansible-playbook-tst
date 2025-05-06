@@ -26,3 +26,4 @@ python3 -m pip install -r requirements.txt
 ansible-galaxy role install -r ./requirements.yml -p ./playbooks/roles --force
 ansible-galaxy collection install -r ./requirements.yml -p ./playbooks/collections --force
 ```
+
