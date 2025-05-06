@@ -1,0 +1,8 @@
+---
+- name: Example Playbook 01
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "This is an example playbook."

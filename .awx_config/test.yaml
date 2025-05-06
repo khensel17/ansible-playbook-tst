@@ -1,0 +1,14 @@
+project_name: organization1-project-playbooks-example
+project_description: Project Playbooks Example
+project_organization_name: organization1
+project_scm_branch: main
+job_templates:
+  - name: 01-example-playbook
+    description: 01 Example Playbook
+    job_type: run
+    inventory: organization1-inventory-test
+    # credentials:
+    #   - vault-password
+    playbook: playbooks/01-playbook-example.yaml
+    allow_simultaneous: true
+

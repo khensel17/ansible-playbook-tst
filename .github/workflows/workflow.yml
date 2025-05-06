@@ -1,0 +1,22 @@
+name: workflow
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
+      - development
+
+jobs:
+  # main-workflow:
+  #   uses: khensel17/github-arc-demo/.github/workflows/01-hello-world.yml@main
+  #   secrets:
+  #     AWX_PASSWORD: ${{ secrets.AWX_PASSWORD }}
+
+  ansible-awx-workflow:
+    uses: khensel17/github-arc-demo/.github/workflows/github-actions-playbooks.yml@main
+    secrets:
+      AWX_PASSWORD: ${{ secrets.AWX_PASSWORD }}
+      ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
