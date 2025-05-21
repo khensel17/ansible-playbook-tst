@@ -11,4 +11,3 @@ job_templates:
     #   - vault-password
     playbook: playbooks/01-playbook-example.yaml
     allow_simultaneous: true
-
