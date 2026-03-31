@@ -16,7 +16,7 @@ jobs:
   #     AWX_PASSWORD: ${{ secrets.AWX_PASSWORD }}
 
   ansible-awx-workflow:
-    uses: khensel17/github-arc-demo/.github/workflows/github-actions-playbooks.yml@main
+    uses: khensel17/github-arc-demo/.github/workflows/github-actions-playbooks.yml@00ce98ab456266a4b69b078231d3d4bf56197594 # main
     secrets:
       AWX_PASSWORD: ${{ secrets.AWX_PASSWORD }}
       ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
